@@ -1,0 +1,24 @@
+name: CoinsMonthCard
+version: '${project.version}'
+main: cn.paper_card.coins_month_card.ThePlugin
+api-version: '1.20'
+folia-supported: true
+author: Paper99
+
+depend:
+  - Database
+  - PlayerCoins
+
+commands:
+  coins-month-card:
+    permission: coins-month-card.command
+
+  yue-ka:
+    permission: coins-month-card.command.yue-ka;
+
+permissions:
+  coins-month-card.command:
+    default: true
+
+  coins-month-card.command.yue-ka:
+    default: true
